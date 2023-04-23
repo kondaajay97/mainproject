@@ -1,0 +1,286 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 570vh;
+}
+#container{
+       width: 100%;
+       height: 100vh;
+       position: relative;
+       overflow: hidden;
+       background-color: red;
+}
+#headervid{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    filter: brightness(50%);
+    filter: hue-rotate(40px)grayscale(120px);
+    
+}
+#headertext{
+    position: absolute;
+    z-index: 3;
+    left: 15%;
+    top: 45%;
+    font-size: 70px;
+    letter-spacing: 30px;
+    font-family: 'Dancing Script', cursive;
+     color: white;
+}
+#img1{
+    position: absolute;
+    z-index: 3;
+    top: 250px;
+    left: 66%;
+    width: 100px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+#img2{
+    position: absolute;
+    z-index: 3;
+    width: 100px;
+    left: 40%;
+    top: 32%;
+    filter: drop-shadow(5px 5px 5px black);
+}
+#img3{
+    position: absolute;
+    z-index: 3;
+    width: 150px;
+    top: 100%;
+    left: 40%;
+    filter: drop-shadow(5px 5px 5px black);
+    transition: bottom 0.5s;
+    transition-timing-function: ease-in;
+}
+#container:hover #img3{
+    top: 60%;
+}
+#greet{
+    position: absolute;
+    z-index: 3;
+    top: 65%;
+    left: 35%;
+    background-color: white;
+    filter: opacity(0);
+    transition: opacity 1s,transform 1s;
+    font-size: 20px;
+}
+#container:hover #greet{
+   filter: opacity(1);
+   transform: skew(10deg,160deg);
+}
+#backgroundimage{
+    width: 100vw;
+    height: 470vh;
+}
+
+#navbar{
+    width: 100%;
+    height:10vh ;
+    background-color: rgba(0,0,0,0.579);
+    position: sticky;
+    top: 0px;
+}
+#mainlist{
+    list-style: none;
+    display: flex;
+}
+.li{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    height:3.3vh ;
+    transition: transform 0.5s;
+}
+.li:hover{
+    background-color: rgb(135,235,185);
+    color: black;
+    transform: scaleX(1.2);
+}
+#sublist{
+    list-style: none;
+    display: none;
+}
+#hov:hover #sublist{
+    display: block;
+}
+#hov:hover .sli{
+    color: white;
+}
+.sli{
+    background-color: black;
+    width: 120px;
+    height: 50px;
+    position: relative;
+    right:20px ;
+    top: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    transition: transform 0.2s;
+}
+.sli:hover{
+    background-color: rgb(135,235,185);
+    color: black;
+    transform: translateX(20px);
+}
+#hov{
+    width: 80px;
+}
+#vid{
+    display: none;
+}
+.sli:hover #vid{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -40px;
+    left: 30px;
+    padding-left: 100px;
+   padding-bottom: 100px;
+    display: block;
+}
+#vid2{
+    display: none;
+}
+.sli:hover #vid2{
+    width: 300px;
+    height: 300px;
+    padding-left: 100px;
+    padding-top: 5px;
+    display: block;
+    position: absolute;
+   top: -50px;
+   left: 25px;
+}
+#vid3{
+    display: none;
+}
+.sli:hover #vid3{
+    width: 300px;
+    height: 300px;
+    padding-left: 100px;
+    padding-top: 5px;
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 25px;
+}
+#vid4{
+    display: none;
+}
+.sli:hover #vid4{
+    width: 300px;
+    height: 300px;
+    display: block;
+    padding-left: 105px;
+    padding-top:5px;
+    position: absolute;
+    top: -50px;
+    left: 20px;
+}
+#vid5{
+    display: none;
+}
+.sli:hover #vid5{
+    width: 300px;
+    height: 300px;
+    display: block;
+    padding-left: 105px;
+    padding-top: 0px ;
+    position: absolute;
+    top: -50px;
+    left: 20px;
+}
+#remaingbody{
+    width: 100%;
+    height: 470vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.785),rgb(16, 15, 14)),url(../Technology/Assets/images/technology.jpg);
+   color: white;
+  filter: brightness(10px);
+}
+
+#Robotics,#AI,#XR,#VR,#Threejs{
+                          width: 100%;
+                          height:80vh ;
+                          margin-top: 40px;
+                          background-color: white;
+                          border-bottom: 40px groove rgb(129,150,158);
+                          border-top: 40px groove rgb(129, 150, 158);
+                          box-shadow: 0px 10px 15px rgb(0, 0, 0);
+}
+#robotics1{
+    position: absolute;
+    top: 790px;
+    left: 750px;
+    transition: clip-path 1s;
+}
+#Robotics:hover #robotics1{
+    clip-path: polygon(3% 8%, 100% 0%, 93% 91%, 0% 100%);
+}
+#robotics2{
+    width: 700px;
+}
+#ai1{
+    position: absolute;
+    left: 750px;
+    top: 240vh;
+    transition: clip-path 1s;
+}
+#AI:hover #ai1{
+    clip-path: inset(5% 20% 15% 10%);
+}
+#ai2{
+    width: 650px;
+    height: 450px;
+}
+#xr1{
+    position: absolute;
+    left: 700px;
+    top: 325vh;
+    width: 550px;
+    height: 450px;
+    transition: clip-path 1s;
+}
+#xr2{
+    width: 650px;
+}
+#XR:hover #xr1{
+    clip-path: polygon(0% 15%, 9% 10%, 15% 0%, 85% 0%, 90% 8%, 100% 15%, 100% 85%, 90% 91%, 85% 100%, 15% 100%, 10% 91%, 0% 85%);
+}
+#vr1{
+    position: absolute;
+    left: 750px;
+    top: 435vh;
+    clip-path: polygon(18% 0, 100% 36%, 83% 100%, 0 81%);
+    transition: clip-path 1s;
+}
+#vr2{
+    width: 600px;
+}
+#VR:hover #vr1{
+  
+    clip-path: inset(5% 20% 15% 10%);
+}
+#threejs1{
+    position: absolute;
+    left: 750px;
+    top: 530vh;
+    clip-path: polygon(14% 0, 100% 30%, 76% 100%, 0 82%);
+    transition: clip-path 1s;
+}
+#Threejs:hover #threejs1{
+    clip-path: none;
+}
+#fotter{
+    width: 100%;
+    height: 30vh;
+    background-color: red;
+    position: absolute;
+    top: 590vh;
+}

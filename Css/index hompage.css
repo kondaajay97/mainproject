@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( 75deg, rgba(216, 17, 100, 0.959 ), rgba(128, 0, 128, 0.886));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#outerdiv{
+            width: 80%;
+            height: 80vh;
+            background-image: linear-gradient(75deg,rgba(165, 42, 42, 0.801),rgba(65, 105, 225, 0.687));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px solid black; 
+}
+#innerdiv{
+             width: 50%;
+             height: 50vh;
+             background-color: black;
+             position: relative;
+             top: 89px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             border-radius: 10px 10px 0px 0px;
+             box-shadow: 5px 5px 5px solid black; 
+             
+}
+.borderdiv{
+    position: relative;
+    top: 30px;
+    width: 80%;
+    height: 30px;
+    border: 5px solid royalblue;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#email,#password{
+                   background-color: transparent;
+                   border: none;
+                   outline: none;
+                   width: 100%;
+                   height: 100%;
+                   padding: 5px;
+                   font-size: 20px;
+                   text-align: center;
+                   color: white;
+}
+#heading{
+    position: absolute;
+    top: 5px;
+    left: 200px;
+    font-size: 50px;
+    color: white;
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    position: relative;
+}
+#button{
+    width: 40%;
+    position: absolute;
+    bottom: 10px;
+    height: 40px;
+    background-color: transparent;
+    border: lawngreen 5px solid;
+    border-radius: 200px;
+    color: pink;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    transition: all 0.2s;
+}
+#button:hover{
+                  border: pink 5px solid;
+                  background-color: purple;
+                  color: white;
+                  transform: scale(1.2);
+}
+#result{
+    color: red;
+    position: absolute;
+    bottom: 50px;
+    font-size: 20px;
+}
+#passvisible{
+    width: 20px;
+    border-radius: 50px;
+    position: absolute;
+    right: 5px;
+}

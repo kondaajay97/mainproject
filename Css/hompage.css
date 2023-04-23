@@ -1,0 +1,180 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#container{
+       width: 100%;
+       height: 100vh;
+       position: relative;
+       overflow: hidden;
+       background-color: red;
+}
+#headervid{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    filter: brightness(50%);
+    filter: hue-rotate(40px)grayscale(120px);
+    
+}
+#headertext{
+    position: absolute;
+    z-index: 3;
+    left: 15%;
+    top: 45%;
+    font-size: 70px;
+    letter-spacing: 30px;
+    font-family: 'Dancing Script', cursive;
+     color: white;
+}
+#img1{
+    position: absolute;
+    z-index: 3;
+    top: 250px;
+    left: 66%;
+    width: 100px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+#img2{
+    position: absolute;
+    z-index: 3;
+    width: 100px;
+    left: 40%;
+    top: 32%;
+    filter: drop-shadow(5px 5px 5px black);
+}
+#img3{
+    position: absolute;
+    z-index: 3;
+    width: 150px;
+    top: 100%;
+    left: 40%;
+    filter: drop-shadow(5px 5px 5px black);
+    transition: bottom 0.5s;
+    transition-timing-function: ease-in;
+}
+#container:hover #img3{
+    top: 60%;
+}
+#greet{
+    position: absolute;
+    z-index: 3;
+    top: 65%;
+    left: 35%;
+    background-color: white;
+    filter: opacity(0);
+    transition: opacity 1s,transform 1s;
+    font-size: 20px;
+}
+#container:hover #greet{
+   filter: opacity(1);
+   transform: skew(10deg,160deg);
+}
+#backgroundimage{
+    width: 100vw;
+    height: 100vh;
+}
+
+#navbar{
+    width: 100%;
+    height:10vh ;
+    background-color: rgba(0,0,0,0.579);
+}
+#mainlist{
+    list-style: none;
+    display: flex;
+}
+.li{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    height:3.3vh ;
+    transition: transform 0.5s;
+}
+.li:hover{
+    background-color: rgb(135,235,185);
+    color: black;
+    transform: scaleX(1.2);
+}
+#sublist{
+    list-style: none;
+    display: none;
+}
+#hov:hover #sublist{
+    display: block;
+}
+#hov:hover .sli{
+    color: white;
+}
+.sli{
+    background-color: black;
+    width: 120px;
+    height: 50px;
+    position: relative;
+    right:20px ;
+    top: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    transition: transform 0.2s;
+}
+.sli:hover{
+    background-color: rgb(135,235,185);
+    color: black;
+    transform: translateX(20px);
+}
+#hov{
+    width: 80px;
+}
+#vid{
+    display: none;
+}
+.sli:hover #vid{
+    width: 300px;
+    height: 300px;
+    padding-left: 100px;
+   padding-top: 5px;
+    display: block;
+}
+#vid2{
+    display: none;
+}
+.sli:hover #vid2{
+    width: 300px;
+    height: 300px;
+    padding-left: 100px;
+    padding-top: 5px;
+    display: block;
+    position: absolute;
+   top: -20px;
+}
+#vid3{
+    display: none;
+}
+.sli:hover #vid3{
+    width: 300px;
+    height: 300px;
+    padding-left: 100px;
+    padding-top: 5px;
+    display: block;
+}
+#vid4{
+    display: none;
+}
+.sli:hover #vid4{
+    width: 300px;
+    height: 300px;
+    display: block;
+    padding-left: 105px;
+    padding-top:5px;
+}
+#vid5{
+    display: none;
+}
+.sli:hover #vid5{
+    width: 300px;
+    height: 300px;
+    display: block;
+    padding-left: 105px;
+    padding-top: 0px ;
+}
